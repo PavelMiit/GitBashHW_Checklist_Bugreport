@@ -1,0 +1,83 @@
+GIT
+1) Посмотреть где я
+pwd
+
+2) Создать папку
+mkdir Folder3
+
+3) Зайти в папку
+cd Folder3/
+
+4) Создать 3 папки
+mkdir Folder4 Folder5 Folder6
+
+5) Зайти в любоую папку
+cd Folder4
+
+6) Создать 5 файлов (3 txt, 2 json)
+touch Text1.txt Text2.txt Text3.txt Json1.json Json2.json
+
+7) Создать 3 папки
+mkdir NewFolder1 NewFolder2 NewFolder3
+
+8. Вывести список содержимого папки
+ls -al Folder4
+
+9) + Открыть любой txt файл
+cat text1
+10) + написать туда что-нибудь, любой текст.
+cat >>Text1
+New text for Text1.txt
+
+11) + сохранить и выйти.
+Ctrl + C
+
+12) Выйти из папки на уровень выше
+cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv Text2.txt Text3.txt NewFolder1
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp Text1.txt Text2.txt NewFolder5
+
+15) Найти файл по имени
+find "Json2.json"
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+grep TV Text.txt
+
+17) вывести несколько первых строк из текстового файла
+head -n 2 NewText.txt
+
+18) вывести несколько последних строк из текстового файла
+tail -n 2 NewText.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less NewText.txt
+
+20) вывести дату и время
+date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+curl http://162.55.220.72:5005/terminal-hw-request
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+#!/bin/bash
+
+cd FolderForScript
+
+mkdir FolderForScript1 FolderForScript2 FolderForScript3
+
+cd FolderForScript1
+
+touch Text1.txt Text2.txt Text3.txt Json1.json Json2.json
+
+mkdir NewFolder1 NewFolder2 NewFolder3
+
+ls -al
+
+mv Json1.json Json2.json NewFolder1
