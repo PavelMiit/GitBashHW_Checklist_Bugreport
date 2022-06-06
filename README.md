@@ -1,1 +1,1 @@
-# homework from the QA course
+homework from the QA course
