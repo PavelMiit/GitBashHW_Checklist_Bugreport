@@ -1,2 +1,2 @@
 # terminal_gitbash
-# Homework from the QA course
+# homework from the QA course
